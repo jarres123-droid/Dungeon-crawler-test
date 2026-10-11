@@ -1,0 +1,15 @@
+[gd_resource type="StandardMaterial3D" load_steps=4 format=3]
+[ext_resource type="Texture2D" path="res://assets/textures/premium/warm_stone_albedo.png" id="1"]
+[ext_resource type="Texture2D" path="res://assets/textures/premium/warm_stone_normal.png" id="2"]
+[ext_resource type="Texture2D" path="res://assets/textures/premium/warm_stone_roughness.png" id="3"]
+
+[resource]
+albedo_color = Color(0.894118, 0.898039, 0.874510, 1)
+albedo_texture = ExtResource("1")
+roughness = 0.94
+roughness_texture = ExtResource("3")
+metallic = 0.0
+normal_enabled = true
+normal_scale = 0.58
+normal_texture = ExtResource("2")
+texture_filter = 4
