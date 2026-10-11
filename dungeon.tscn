@@ -1,0 +1,41 @@
+[gd_scene format=3 uid="uid://eha2kyefrcsd"]
+
+[ext_resource type="Script" uid="uid://vqgynsu0we8m" path="res://dungeonprocedural.gd" id="1_4f3i4"]
+[ext_resource type="Script" uid="uid://ds3gynaw30p1y" path="res://playerjoystickdodge.gd" id="2_4f3i4"]
+[ext_resource type="Script" uid="uid://eb3vhc5r2uan" path="res://followcamera.gd" id="3_noicg"]
+[ext_resource type="Script" uid="uid://d7r3puhc1cdd" path="res://dungeoncombatdodge.gd" id="5_q5kms"]
+[ext_resource type="Script" uid="uid://cnmbnj4veivou" path="res://dungeonvisualsv2.gd" id="6_4f3i4"]
+[ext_resource type="Script" uid="uid://doeff7im5738p" path="res://combatpolish.gd" id="7_4f3i4"]
+[ext_resource type="Script" uid="uid://clh0tw5cso73i" path="res://dungeonartv3.gd" id="7_q5kms"]
+[ext_resource type="Script" uid="uid://ckjgtiftk5rna" path="res://dungeon_textures_v1.gd" id="8_q5kms"]
+[ext_resource type="Script" uid="uid://dr27gu7dwjpg8" path="res://dungeon_architecture_v1.gd" id="9_tgur7"]
+
+[node name="Dungeon" type="Node3D" unique_id=725300024]
+script = ExtResource("1_4f3i4")
+
+[node name="Player" type="CharacterBody3D" parent="." unique_id=1528033286]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.1, 2)
+top_level = true
+script = ExtResource("2_4f3i4")
+
+[node name="followcamera" type="Camera3D" parent="." unique_id=856628305]
+script = ExtResource("3_noicg")
+
+[node name="DungeonCombat" type="Node3D" parent="." unique_id=735651656]
+script = ExtResource("5_q5kms")
+
+[node name="dungeonvisuals" type="Node3D" parent="." unique_id=627281265]
+script = ExtResource("6_4f3i4")
+
+[node name="combatpolish" type="Node3D" parent="." unique_id=193200775]
+script = ExtResource("7_4f3i4")
+
+[node name="dungeonart" type="Node3D" parent="." unique_id=636029382]
+script = ExtResource("7_q5kms")
+
+[node name="dungeontextures" type="Node3D" parent="." unique_id=928037301]
+script = ExtResource("8_q5kms")
+
+[node name="dungeonarchitecture" type="Node3D" parent="." unique_id=681474774]
+script = ExtResource("9_tgur7")
+decorative_floor_inlays = false
